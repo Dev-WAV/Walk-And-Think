@@ -16,7 +16,7 @@ def analyse_obj_str(obj_str):
      
     return position_dict
 
-def Walk_And_Think(sample_str,obj_str):
+def WAT_strfind(sample_str,obj_str):
     '''从sample_str中寻找obj_str,返回obj_str首字符在sample_str中的索引
     Find the index of the first character of obj_str in sample_str and return it.'''
     position_dict=analyse_obj_str(obj_str)
