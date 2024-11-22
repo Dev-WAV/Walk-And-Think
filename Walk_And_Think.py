@@ -23,7 +23,7 @@ def Walk_And_Think(sample_str,obj_str):
     steplen=len(obj_str)
     cursor=0
     issame=False
-    answer=[]
+    obj_index=[]
 
     while cursor<=(len(sample_str)-1):
         cursor_char=sample_str[cursor]
@@ -50,7 +50,7 @@ def Walk_And_Think(sample_str,obj_str):
                     else:
                         pass
                 if issame:
-                    answer.append(cursor-i)
+                    obj_index.append(cursor-i)
         cursor+=steplen
 
-    return answer
+    return obj_index
